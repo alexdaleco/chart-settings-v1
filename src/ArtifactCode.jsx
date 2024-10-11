@@ -18,7 +18,7 @@ const ToggleSwitch = ({ isOn, onToggle }) => (
 
 const SettingItem = ({ label, isOn, hasSubMenu, onToggle, disabled }) => (
   <div className={`flex items-center justify-between py-2 ${disabled ? 'opacity-50' : ''}`}>
-    <span className="flex-grow">{label}</span>
+    <span className="flex-grow text-left">{label}</span>
     <div className="flex items-center">
       <ToggleSwitch isOn={isOn} onToggle={onToggle} />
       {hasSubMenu && <ChevronRight size={20} className="ml-2 text-gray-400" />}
